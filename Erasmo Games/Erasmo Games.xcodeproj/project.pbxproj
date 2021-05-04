@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		CFCB91EA2628CE8900745DF4 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB91E82628CE8900745DF4 /* Pokemon.swift */; };
 		CFCB91F02628D80A00745DF4 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB91EF2628D80A00745DF4 /* PokemonViewModel.swift */; };
 		CFCB91F12628D80A00745DF4 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB91EF2628D80A00745DF4 /* PokemonViewModel.swift */; };
+		F30C0CE626418D69007E44CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F30C0CE526418D69007E44CC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30C0CE626418D69007E44CC /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +209,9 @@
 			dependencies = (
 			);
 			name = "Erasmo Games (iOS)";
+			packageProductDependencies = (
+				F30C0CE526418D69007E44CC /* Kingfisher */,
+			);
 			productName = "Erasmo Games (iOS)";
 			productReference = CFCB91832628AA5100745DF4 /* Erasmo Games.app */;
 			productType = "com.apple.product-type.application";
@@ -271,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					CFCB91822628AA5100745DF4 = {
 						CreatedOnToolsVersion = 12.4;
@@ -298,6 +303,9 @@
 				Base,
 			);
 			mainGroup = CFCB91762628AA5000745DF4;
+			packageReferences = (
+				F30C0CE426418D69007E44CC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CFCB91842628AA5100745DF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -562,6 +570,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -584,6 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -734,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F30C0CE426418D69007E44CC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F30C0CE526418D69007E44CC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30C0CE426418D69007E44CC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CFCB91772628AA5000745DF4 /* Project object */;
 }
